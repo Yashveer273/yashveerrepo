@@ -1,0 +1,366 @@
+->task 1 ....
+//how to setup function
+
+import {link} from react-router-dom
+function  array (){
+    return (
+
+    )
+}
+export default array;
+
+->task 2...
+// how to define arow function
+ 
+import React from react
+const array=()=>{
+    return (
+
+    )
+    export default array;
+
+-> task 3.....
+//how to setup link
+\import {Link} from react-router-dom
+const nav=()=>{
+    return (
+        <ul>
+            <li><Link t="/array">array</Link></li>
+
+    )
+}
+export default nav;
+
+->task 4....
+//how to set up route in app file 
+ 
+ import array from '.interview/array;
+ import {BrouserRouter,Routes,Route} from 'react-router-dom';
+
+function app (){
+    return (
+        <BrouserRouter>
+        </nav>
+        <Routes>
+        <Route path="/array" element{</array>}></Route>
+        //path define the link which showing on search bar of
+        brwoser when we click on longin like etc.
+        and normal link is work on this path.
+        </Routes>
+        <BrouserRouter>
+    )
+}
+
+// data types
+1 String
+2 number
+3 boolean
+4 Array 
+5 Object 
+6 null
+7 undefined
+
+//dom -->document object module....
+structur
+
+|------------------------------------------------------------
+|       document
+|           |
+|          root(html)
+|            |-----------------|
+|    element:<head>          element:<body> 
+|            |-----------------|                
+|        <title>          |----------|
+|                       <nav>      <h1>
+|                         |          |
+|                text:'about us'    attribute:'id' 'class'
+|------------------------------------------------------------
+
+//-->write 3 main method to target the Dom object........
+ans-> 1)className---------document.getElementsByClassName("jo bhi ho");
+                                             ↑
+    o/p-> jis jis tag pe ye class lag rhi hoge un tages ko class k sath array ki forms
+    me return kar dega 
+
+2)tag name --document.getElementsByTagName("jo bhi ho")  
+                                ↑
+3)id ---------------document.getElementById("id jo bhi ho")
+                                      ↑
+//-->what is querySelector & querySelectorAll 
+ans- this is intriduce in ES6 vesion develop to work like all 3 main method to target the doc object
+Deffrence- 1)querySelector-jese ham document.getElementsByClassName me tages ki array mil rhi thi isme 
+                           hame bus first attribute hi milega attributes ki array nahi jahan jahan is
+            className ko hamne use kiya ho.
+ex document.querySelector(".list");
+o/p as a output first attribute return hoga jahn hamne ise use kiya ho
+ 
+note-. to target className
+     # to id.
+     "ul" or jo bhi tag ho wo.
+
+2) querySelectorAll- return all attributes array wher targeted className or id or tag used
+ 
+  document.querySelector("#list h1");
+  return- list name ki id me jo bhi h honge bo target ho jaenge.
+  same with document.querySelectorAll("#list h1");
+
+
+
+ 
+                                       
+//--->basic dom object method
+// Element=document.all[9];
+// Element=document.head;
+// Element=document.title;
+// Element=document.body;
+// Element=document.links;
+// Element=document.domain;
+// Element=document.images;
+// Element=document.forms;
+
+//-> what we can get with dom ?......
+// only 3 thinks
+// 1.html 2.text 3.attribute
+
+//-> dom get methods:......
+
+*innerText
+  o/p-> <span id="xyz">yashveer</span>
+  o/p--> yashveerinnerText -- to get the text ex document.getElementById("jo bhi ho").innerText;
+
+* innerHTML -->return html with text
+ 
+* getAttribute ->document.getElementById("jo bhi ho").getAttribute("style");
+o/p-> id me inline css ki style return kardega
+o/p-> onClick get karenge to o/p me event pr jo function hoga bo return ho jaega;
+document.getElementById("jo bhi ho").getAttribute("style").value;
+0/p-> only return content not attribute.  
+
+* getAttributeNode -> attribute (style)  plus jo content hoga bo( jo stylr lagrhi he bo)return ho jaegi 
+
+* attribute -> isme sare attribute return ho jaenge in the object horm
+  .attribute[0].value;
+
+//set method....
+*innerText
+
+* innerHTML -->return html with text
+ if -> innerHTML="<h1>wo<h/1>
+ so whats going on here-actually jo bhi id ham target karenge usme jo <h1> content hoga bo wo me convert ho jaega.
+*setAttribute --> in this we pass 2 perameter 1st define attribute 2nd replacer
+ex .setAttribute("onClick" "ab jis function ko set karna he uska name")
+*removeAttribute --> to remove attribute
+  --  .removeAttribute("style");
+  o/p-> targeted (id || className|| tagName) me jo style attribute hoga bo remove ho jaega.
+
+//-->dom css styling method
+
+  document.querySelector(".list h").style.backgroudColor="red"
+  o/p h in list id become red.
+
+  note- in dom css method you can't write like this.
+  ex backgroud-color
+  where u seen - in ccs property u have to writein this way.
+  backgroudColor. 
+
+
+
+//--> how to replacer function using dom object fired by onClick event. note- not working in react. but work in pure javascript. 
+  normal way------↓
+  
+  
+       import React from "react";
+    const Array=()=>{
+      const test=()=>{
+        document.querySelector("#ccn").onClick=abc; //this is not working or may be i don't know how is it work in react.js.
+      //use->it's(querySelector("#ccn").onClick=abc;)used to change the function on which the onClick event fired where the id name is ccn and previous 
+    function is test replacered by abc.
+    console.log(Element);
+    }
+    } 
+     document.querySelector("#ccn").onClick=abc;
+     function abc(){
+         document.querySelector("#ccn").style.background="green";
+     }
+    return(
+          <span id="ccn" onClick={test} >txt</span>    
+    )
+   }
+   export default Array;
+
+   actual way---↓
+   addEventListner
+   document.getElementById("ccn").addEventListener("click","abc");
+   document.getElementById("ccn").addEventListener("mouseenter","abc");
+   note- 1st arrgument get event without on and 2nd get function.
+
+document.getElementById("ccn").removeEventListener("click","abc");
+
+//-->classList ↓
+
+  //  how to replacer class by another class using dom
+  document.querySelector(".list").classList.add(list2);
+  o/p- now list id replacered by list2
+  
+  //  how to remove class from dom
+  document.querySelector("#list h").classList.remove("xyz")
+
+ //classList.toggle method
+
+document.getElementById("xyz").classList.toggle("abc");
+note-in toggle when we fired click event old class replacered by abc and when again fire click event
+abc class replacer by old class.
+
+
+
+//-->what is cloneNode and why we use.
+use- when we copy 1 list element in another list. here we use clone cloneNode.
+
+var target = document.grtElementById ("list1").children[0];
+var copyElement =target.cloneNode(false);
+console.log(copyElement);
+document.getElementById("list2").appendChild(copyElement)
+
+
+o/p-> not all innerText is copped but tag and it attribute copped.
+<li className="abc"></li>
+
+var copyElement =target.cloneNode(true);
+↓
+o/p-<li className=""abc>123</li>o/p let orang is at first position in list in list 1
+after run this code orang will append in list 2 as a last elemen 
+
+note- this copped <li>orang</li> can be copy in div but this element alway work as a list.
+
+//->dom contains() method
+let we have 1 div have id outer and we try to find that there is inner div by id ="5" ? 
+so here we use contains.
+step 1-> target outer div id.
+var outer = getElementById("outer");
+step 2-> target targeted id in outer div.
+var target= getElementById("5")
+
+step 3-> find there is inner div id=5;
+var find =outer.contains("5");
+o/p-> either true or false
+//-> hasAttribute()
+used to find out that there is another attribute.
+var target=document.grtElementById("test");
+var find=target.hasAttribute("class")
+o/p -> in true or false 
+note- id is attribute and class also. 
+//-> isEqualNode()method
+use - compair or check list a element (not elements) is equal with another list element includeing index value(node) 
+-compair perameter 
+  same node type. ex <p>
+  same node name.ex<li>
+  same node value ex orange
+  same childNode
+  (if list a node have child node and list b also thier child node both must be same)
+  same attribute ex class
+  same attribute value
+  o/p true or false
+Q) arguments objest.
+it allow to pass more then 2 arguments in funtion is.
+ex function sum(){
+  let sum =0;
+  for(let i in argumets){
+    sum +=arguments[i];
+  }
+  console.log(sum);
+  sum(1,2,3)
+}
+note- arguments get all argument as object list and run in loop 
+problem- when we want to except any value to execute in loop.
+here arguments object fail so we use rest operator.
+ex sum("gd",3,4)
+we dont pass gd. but we cannt handel this with arguments.
+
+Q) rest operator 
+
+Q) find and findIndex
+find return first match element.
+index return location
+
+explain//file a.html
+//find
+<head><title>es tute</title>
+</head>
+<body><h1>dd</h1>
+
+<script>let data=[1,2,3,1];
+let b=data.find(function(item){
+  return item<2;
+}
+</script></body>
+o/p- 1
+
+//-->findIndex with arow function
+result=data.findIndex((item)=>item<2 && item =1)//&& item =1 // write this olny just for showing condition can happend in arow 
+console.log(result);
+o/p 0 // location
+ same use with  object but we acces by lets say 
+ a{
+  1:3
+ }
+ function cu(item){
+  return item ==1;       // or - itrm.id==0;
+ }
+console.log(a.find(cu))
+
+----------------------------------------------
+// --->node.js 
+
+const express=require('express');
+require("./config");
+const User=require('./users')
+const app=express();
+
+
+//post method->
+
+ app.use(express.json());
+ app.post("/post he ye",async(req,res)=>
+ {
+   let data=ner user(req.body);
+   const resulte=await data.save();
+   resp.send(result); 
+  });
+
+//get method->
+
+const user_Detail=require('./userdetail'); 
+
+app.get("/get he ye",async(req,res)=>{
+  let data =await user_Detail.find();
+  res.send(" data have got :" data);
+} )
+
+// delete method->
+
+app.delete("/delete he ye/:_id",async(req,res)=>{
+  console.log(req.params)    -----we get the id of deleted record
+  let data=await user.deleteOne(req.params);
+  resp.send(data);
+}) 
+
+//put method ->
+
+app.put("/put he ye:_id",(req,res)=>{
+  console.log(req.params)
+  let data =await user.updateOne(
+      req.params,           //condition// or // old value// or id
+      {
+        $set{req.body}
+      }
+)}
+
+
+o/p---- pass body like new price in thunderclient as a json data
+and then old price will replace this new price
+
+
+
+
+
+ 

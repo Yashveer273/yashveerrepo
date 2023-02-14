@@ -1,0 +1,181 @@
+some interview point qustions.
+sourece-https://www.slideshare.net/RexWang7/css3-notes
+
+Q)fetures of html5?
+Header and Footer:
+     With these new tags, there is no longer a need to identify the two elements with a <div> tag.
+      Footer is placed at the end of the web page while Header is placed at the start of the web page.
+       By using <header> and <footer> HTML5 elements, the browser will know what to load first and what to load later. 
+The header can contain-
+
+One or more heading elements (<h1> – <h6>)
+Logo or icon
+Authorship information
+Footer can contain-
+
+Authorship information
+Copyright information
+Contact information
+Back to top links
+Nav tag:
+     The <nav> tag defines a set of navigation links. 
+     ex-
+<nav>
+  <a href="/html/">HTML</a>
+  <a href="/css/">CSS</a>
+  <a href="/js/">JavaScript</a>
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+
+Q1)css3
+Opacity One of the CSS3 properties called opacity makes elements
+
+Box Shadow One of the CSS3 new features is the box-shadow property
+
+New Colors-rgb
+attribute seldector -CSS3 also introduced new selectors in addition to the ones in CSS2. Instead of applying IDs or classes for styling, 
+developers can select HTML elements according to their attributes.
+ex p, h1,button.
+
+Q2) display flex ?
+ __________________________________
+|..............content.............|                                  
+|..............content.............|
+|..............content.............|
+|               ""                 |
+|..............content.............|
+|__________________________________|
+
+dispaly the box with this content size.
+
+Q3)advantage and disadvantage of css.?
+ ans)1)CSS3 is the latest version, hence it supports responsive design.
+ 2) CSS3 is capable of making the web page more attractive and takes less time to create.
+ 3) CSS3 we can perform all kinds of animation and transformations as it supports animation and 3D transformations.
+
+Q3.1) types of css in pure javascript?
+ ans) there are 3 types of css
+ 1)inline css.-> This kind of style is specified within an HTML tag using the style attribute
+ ex-<h5 ClassName="logo-title"style="color:white;textAlign:center">Canteen</h5>
+        
+ 2)internal css (Importing external stylesheets).
+ <head> 
+ <link rel="stylesheet" href="css/stlye.css"/>
+ </head>
+ That usually goes at the top of the file where other imports happen 
+ ex import "./app.css"
+
+ 3)external css- like bootstrap 
+ <body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity=
+ "sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ </body>
+
+Q3.2) how many way to stayle the react app by css.
+ 1-Inline Styling.
+ *<h1 style={{color: "Green"}}>Hello JavaTpoint!</h1>
+
+ 2-CSS Stylesheet.
+ *You can write styling in a separate file for your React application,
+  and save the file with a .css extension. Now, you can import this file in your application.
+  import './App.css';
+  note-The index.html file code is given below
+  <body>
+  <div id="app"></div>
+  <body>
+
+ 3-CSS Module. link ant design module 
+  import './AntDesignLayout.css'
+  note note mentioned in body just creat file by css extention 
+  write css  and import in any js file to use 
+  but u have to install this css module by npm i _third part_name jo bhi bo ho ex antdesign.
+ 
+ 4-Styled Components.- this style component work like a library
+  import { Button,Card } from 'antd';
+
+Q4)which type get highest priority
+ inline
+ internal 
+ external
+
+Q5) css Selector
+ used to find html elemens you want to style.
+
+ select elements based on id ,className,*)
+ * {
+
+ }// star is universal selector to select all html tag
+
+Q6)element selector.
+  css apply based on elemens
+  ex-
+ group select ex-h1,p,span{
+
+ }
+ p.center{
+
+ }// here we target p where className is center
+ element selector ex p{
+
+ }
+
+Q7) what is a in rgba
+ a is alpha used to transparency  and value lies b/w 0.0 to 1.0.
+
+Q8) what is hsl colors
+ use for cylindrical coordinate system
+ h-hue:-lies b/w 0 - 360 ;0--red,120-green,240-blue. 
+ s-saturation lies 0% to 100%; 100%- (gray)
+ l-lightness 0%- black 100%- white
+ syntax
+ h1{
+    color:hsl(h,s%,l%);
+ }
+
+Q8) css backgroud properties
+ 1)backgroud-color
+ 2)backgroud-images
+ 3)backgroud-repeat
+ 4)backgroud-attachment: groupd image will not scroll with page
+ 5) backgroud-poition - set the image to the perticular position
+
+Q9) what are the the different css border properties?
+ border style - specified the type of border u want
+ border width- set the border width
+ border color- set the border color-using hex(#) value,rgb.
+
+Q10)margen peroperies value? (top, right, bottum, left).
+
+ length in cm, px, pt ect.
+ width % of the element
+ margin calculated by the browser: auto.
+
+ Q11) margin  and padding
+ margin-outside of the box
+ value-
+ auto,inherit
+
+ padding 
+  inside of the box
+  value inherit
+
+12 text css 
+text-Alignment
+left right center justify
+
+text-transform
+uppercase
+lowercase
+capatalize
+
+letter-spacing
+word-spacing
+line height
+-spacing b/e line
+
+text shadow
+
+--> how to side by side the div's
+use float in child div and each child div should have same className.
+

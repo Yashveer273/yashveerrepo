@@ -1,0 +1,125 @@
+#components-layout-demo-custom-trigger .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .contect{
+    border-radius: 5px;
+    border-color: rgb(28, 30, 30);
+    color: #2e3435;
+    border-width: 1.5px;
+    background: #f3f5f6;
+    box-shadow: 3px 3px 6px #001e28;
+    font-weight: 450;
+  }
+  .contect::backdrop{
+    border-radius: 5px;
+    border-color: rgb(28, 30, 30);
+    color: #2e3435;
+    border-width: 1.5px;
+    background: #f3f5f6;
+    box-shadow: 3px 3px 6px #001e28;
+    font-weight: 450;
+  }
+  .contect:hover{
+    border-radius: 5px;
+    border-color: rgb(56, 71, 71);
+    color: #f3f5f6;
+    border-width: 1.5px;
+    background: #2e3435;
+    box-shadow: 3px 3px 6px #001e28;
+
+  }
+  #components-layout-demo-custom-trigger .trigger:hover {
+    color: #1890ff;
+  }
+  
+  #components-layout-demo-custom-trigger .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    color: black;
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+    
+  }
+  .ant-layout.ant-layout-has-sider {
+    border: solid;
+    flex-direction: row;
+    margin-top: -127px;
+    border-color: gainsboro;
+}
+.PHome{
+  text-decoration: none;
+}
+.title{
+  letter-spacing: 1.3px;
+  color: #ffffffff;
+
+} 
+.pp{
+/* background-image: url("../imges/pexels-pixabay-326279.jpg"); */
+/* background-image: url("../imges/pexels-engin-akyurt-1435895.jpg"); */
+
+background-size: cover;background-image: url("../imges/pizzabg2.jpg");
+
+}
+.ant-layout-header .anticon svg {
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 33px;
+  margin-top: -18px;
+}
+.ant-layout-content{
+  color: black;
+  font-size: 18px;
+}
+.logo{
+  text-align: center;
+  color: aliceblue;
+}
+
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub{
+  background: #001e28;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color:rgb(227, 113, 72);
+}
+.ant-layout-sider-children{
+  background:initial;
+}
+.ant-card-cover img {
+  border-radius: 7px 7px 7px 7px;
+}
+
+/* .yas {
+  flex: 0 0 230px;
+  max-width: 166px;
+  min-width: 230px;
+  width: 200px;
+} */
+
+.ant-layout-sider-children{
+      margin-top: 12.9px;
+}
+.anticon .anticon-delete{
+  font-size: 29px;
+
+}
+/* .ant-table-tbody  tr  td{
+  
+  border-top: 1px solid #e1b9b9;
+  border-bottom: 1px solid #e1b9b9;
+  border-left: 1px solid #e1b9b9;
+  border-right: 1px solid #e1b9b9;
+  }
+.ant-table.ant-table-bordered {
+  border-top: 1px solid #de8484;
+  border-right: 1px solid #de8484;
+  border-left: 1px solid #e1b9b9;
+} */
