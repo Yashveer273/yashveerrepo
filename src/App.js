@@ -38,11 +38,11 @@ function App() {
          {/* ----------------------------------------- */}
 
 
-      {/* <Routes> */}
+      {/* <Routes>
         
-        {/* <Route element={<PrivateComponent/>}> */}
+        <Route element={<PrivateComponent/>}>
         
-        {/* <Route path="/Status" element={<Status/>}></Route>
+        <Route path="/Status" element={<Status/>}></Route>
         
         <Route path="/Logout" ></Route>
         </Route> ---PrivateComponent
@@ -50,14 +50,14 @@ function App() {
         
         <Route path="/" element={<LogIn/>}></Route>  
         <Route path="/PizzaHurt" element={<PizzaHurt/>}></Route>
-        <Route path="/Canteen" element={<PizzaHome/>}></Route> */}
-        {/* <Route path ="/Jewellery"element={<Jewellery/>}></Route> */}
-        {/* <Route path="/PayBill" element={<PayBill/>}></Route>
-        <Route path ="/cart" element ={<Cart />}></Route> */}
-        {/* <Route path="/contact" element={<Contact/>}></Route>  */}
-        {/* <Route path ="/array" element={<Array />}></Route>
-      </Routes>   
-          */}
+        <Route path="/Canteen" element={<PizzaHome/>}></Route>
+        <Route path ="/Jewellery"element={<Jewellery/>}></Route>
+        <Route path="/PayBill" element={<PayBill/>}></Route>
+        <Route path ="/cart" element ={<Cart />}></Route>
+        <Route path="/contact" element={<Contact/>}></Route> 
+        <Route path ="/array" element={<Array />}></Route>
+      </Routes>    */}
+         
       </BrowserRouter>
     </div>
   );

@@ -259,17 +259,12 @@ input::-webkit-inner-spin-button {
     margin-right: 204px;
     margin-top: 24px;
   }
+
 }
 
 @media only screen and (max-width:1280px) {
   .first_div {
     margin-left: 283px;
-  }
-
-  .height {
-    margin-left: -119px;
-    margin-top: -148px;
-    margin-right: 0px;
   }
 
   .child1 {
@@ -298,15 +293,131 @@ input::-webkit-inner-spin-button {
 }
 }
 @media only screen and (max-width:1280px){
+  .height {
+    margin-left: -12px;
+    margin-top: -148px;
+    margin-right: 0px;
+  }
   .carousel-control-next {
     right: 0px;
   } 
 }
+@media only screen and (max-width:1080px){
+
+
+.height {
+  margin-left: -106px;
+  margin-top: -148px;
+  margin-right: 0px;
+}
+}
+@media only screen and (max-width:950.40px){
+  .height{
+  margin-left: -170px; 
+}
+}
+@media only screen and (max-width:934px){
+
+  .height {
+    margin-left: -107px;
+  }
+  .first_div {
+    margin-left: 106px;
+    margin-right: -25px;
+}
+  }
+
+  @media only screen and (max-width:920px){
+    .height {
+      margin-left: -122px;
+    }
+  }
+  @media only screen and (max-width:900px){
+    .height {
+      margin-left: -142px;
+    }
+  }
+  @media only screen and (max-width:880px){
+    .height {
+      margin-left: -160px;
+
+    }
+    .first_div {
+      margin-left: 140px;
+  }
+}
+  @media only screen and (max-width:860px){
+    .height {
+      margin-left: -180px;
+    }
+    .first_div {
+      margin-left: 161px;
+  }
+  }
+  @media only screen and (max-width:840px){
+    .height {
+      margin-left: -201px;
+    } 
+  }
+  @media only screen and (max-width:830px){
+    .height {
+      margin-left: -213px;
+    }
+    .first_div {
+      margin-left: 192px;
+  }
+}
+@media only screen and (max-width:800px){
  
+  .height {
+    margin-left: -242px;
+}
+.first_div {
+  margin-left: 233px;
+}
+}
+
+@media only screen and (max-width:780px){
+ 
+  .height {
+    margin-left: -261px;
+}
+.first_div {
+  margin-left: 246px;
+}
+}
+@media only screen and (max-width:750.40px){
+ 
+  .height {
+    margin-left: -288px;
+}
+.first_div {
+  margin-left: 278px;
+}
+}
 
 
 
-@media only screen and (max-width:580px) {
+@media only screen and (max-width:714.40px){
+  .height {
+    margin-left: -327px;
+}
+.first_div {
+  margin-left: 313px;
+}
+}
+@media only screen and (max-width:680px){
+
+  .height {
+    margin-left: -361px;
+}
+.first_div {
+  margin-left: 358px;
+}
+
+
+}
+@media only screen and (max-width:580px){
   .contact2 {
     margin-left: 164px;
     margin-right: 126px;
@@ -329,15 +440,15 @@ input::-webkit-inner-spin-button {
 }
 }
 
-
+/* -------------------------------------------------- */
 
 /* .logout{
   text-decoration: none;
 }
 .mobno{
   text-decoration: none;
-} */
-/* .loginprofile{
+}
+.loginprofile{
   margin-top: -36px;
   text-align: center;
   border: solid;
@@ -350,8 +461,8 @@ input::-webkit-inner-spin-button {
   background: #464646;
   box-shadow: 3px 3px 6px #001e28;
  
-} */
-/* .categoryName h6{
+}
+.categoryName h6{
   text-transform: capitalize;
   color: #774f76;
   font-size: 1rem;
@@ -362,24 +473,19 @@ input::-webkit-inner-spin-button {
 .register{
   color: #61dafb;
   font-weight: 100;
-} */
+}
 
-/* .loginprofile2{
+.loginprofile2{
   text-align: center;
   margin-left: 615px;
   text-decoration: none;
   
-} */
-
-/* .first_div{
-  
-  width: 100%;
-  
-
-} */
+}
 
 
-/* .Home {
+
+
+.Home {
   text-align: center;
   margin: -114px;
 } 
@@ -387,8 +493,8 @@ input::-webkit-inner-spin-button {
 .regiter {
   text-align: center;
 
-} */
-/* .shop{
+}
+.shop{
   text-align: center;
 }
 .Dream{
@@ -398,9 +504,9 @@ input::-webkit-inner-spin-button {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-} */
+}
 
-/* .App-header {
+.App-header {
   background-color: black;
   min-height: 100vh;
   display: flex;
@@ -409,9 +515,9 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-} */
+}
 
-/* .App-link {
+.App-link {
   color: #61dafb;
 }
 
@@ -422,8 +528,8 @@ input::-webkit-inner-spin-button {
   to {
     transform: rotate(360deg);
   }
-} */
-/* .aside.ant-layout-sider.ant-layout-sider-dark {
+}
+.aside.ant-layout-sider.ant-layout-sider-dark {
   flex: 0 0 230px;
   max-width: 166px;
   min-width: 230px;
