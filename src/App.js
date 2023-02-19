@@ -19,7 +19,6 @@ import Contact from './assignment/contact';
 // import Array from './interview/array';
 
 
-
 function App() {
   return (  
     <div className="App">

@@ -1,7 +1,7 @@
 import React from "react";
 import BootstrapCarousel from "./BootstrapCarousel";
 
-//////////// this web site is responsive on only contact component
+// this web site is responsive on only contact component
 
 function Jeweller() {
   return (
