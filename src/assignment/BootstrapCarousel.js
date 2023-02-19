@@ -9,7 +9,7 @@ import img3 from '../imges/carousel4.jpeg';
 
 function BootstrapCarousel() {
   return (
-    <div className="bottum" >
+  
     <div className="height">
     <div className="first_div  " >
     <Carousel variant="dark" >
@@ -51,7 +51,7 @@ function BootstrapCarousel() {
     </Carousel>
     </div>
     </div>
-    </div>
+  
   );
 }
 

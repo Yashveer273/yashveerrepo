@@ -16,7 +16,6 @@ function Contact(){
         
      <>
        <div className='contact2' >
-        <>bb</>
                   <div className='contact1'>
      <form onSubmit={submit}>
 
