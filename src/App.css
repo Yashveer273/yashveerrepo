@@ -432,13 +432,32 @@ input::-webkit-inner-spin-button {
     margin-top: 24px;
   }
 }
+  
+  
 
-@media (max-width: 992px){
+
+@media only screen and (max-width: 992px){
 
 .container {
     max-width: 922px;
 }
 }
+
+
+/* flex-direction column; */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------------------------------------------------- */
 

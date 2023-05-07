@@ -14,7 +14,7 @@ function Jeweller() {
           <spam className="welcome">
             <p>
               <h1 style={{ color: "1c1c1c", fontSize: "3rem" }}>
-                Welcome to our website{" "}
+                Welcome To Our Website{" "}
               </h1>
             </p>
           </spam>

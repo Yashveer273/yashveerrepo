@@ -5,7 +5,7 @@ import {Carousel} from 'react-bootstrap';
 import img1 from '../imges/carousel1.png';
 import img2 from '../imges/carousel2.png';
 import img3 from '../imges/carousel4.jpeg';
-import '../style.css';
+// import '../style.css';
 
 function BootstrapCarousel() {
   return (
