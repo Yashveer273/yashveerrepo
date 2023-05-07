@@ -1,4 +1,6 @@
 import { message } from 'antd';
+// import Nav3 from '../major_project/Nav3';
+import Nav3 from "./Nav";
 import '../App.css';
 import React,{useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
@@ -29,7 +31,7 @@ const LogIn=()=>{
         console.warn(result)
         if(result.name){
             localStorage.setItem("user",JSON.stringify(result));
-            navigate("/Canteen")
+            navigate("/Detox")
             message.success("Login Successful");
   
         }else{
@@ -37,17 +39,24 @@ const LogIn=()=>{
         }
     }
     return(
+        <>
+       <Nav3/>
+       <div  style={{width:"100%",height:"100%",backgroundColor:"antiquewhite"}}>
+        
+ 
         <div className='loginprofile2'>
-        <div className="loginprofile">
+        <div className="loginprofile"style={{margin:"63px,0px"}}>
             <h1 className='register'>LogIn</h1><br></br>
             <input className='inputbox' type="text" placeholder='Name' 
             onChange={(e)=>setname(e.target.value)} value={name}/><br></br><br></br>
             <input className='inputbox' type="password" placeholder="Password" 
             onChange={(e)=>setpassword(e.target.value)} value={password}/>
             <br></br><br></br>
-            <Button className="contect" onClick={handlelogin} type="button">LogIn</Button><br></br>
+            <Button className="login" onClick={handlelogin} type="button">LogIn</Button><br></br>
         </div>
         </div>
+        </div>
+        </>
     )
 
 }

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-// import { ReactDOM } from "react-dom";
-
+import { ReactDOM } from "react-dom";
+import Nav3 from "../major_project/Nav3";
 function Contact(){
     const[name,setname]=useState("")
     const[email,setemail]=useState("")
@@ -15,6 +15,7 @@ function Contact(){
     return(
         
      <>
+     <Nav3/>
        <div className='contact2' >
                   <div className='contact1'>
      <form onSubmit={submit}>

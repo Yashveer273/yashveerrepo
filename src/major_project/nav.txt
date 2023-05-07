@@ -1,0 +1,5 @@
+const nav=({size})=>{
+    return(
+<span>{size}</span>
+    )
+} 

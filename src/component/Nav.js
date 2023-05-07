@@ -13,18 +13,27 @@ const Nav=()=>{
         
         { auth ?
         <ul className="a">               
-         <li><Link to="/Canteen">Canteen</Link></li>
-         <li> <Link to="/Jewellery">JewelleryShop</Link></li>
-         <li><Link to ="/Status"></Link></li>
-         <li><Link onClick={LogOut} to ="/SignUp"> LogOut
+         <li><Link to="/Canteen" style={{color:"white"}}>Canteen</Link></li>
+
+         <li><Link to ="/Status" style={{color:"white"}}></Link></li>
+         <li><Link onClick={LogOut} to ="/SignUp" style={{color:"white"}}> LogOut
          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;User({JSON.parse (auth).name})</Link></li>
         </ul>
         :
         <ul className="a">
-            <li><Link to="/SignUp">SignUp</Link></li>
-            <li><Link to ="/">LogIn</Link></li> 
-            <li><Link to ="/array">Array</Link></li>
-            <li> <Link to="/Jewellery">JewelleryShop</Link></li>
+            <li><Link to="/SignUp"style={{ color: "black", lineHeight: "3rem" }}>SignUp</Link></li>
+            <li><Link to ="/LogIn" style={{ color: "black", lineHeight: "3rem" }}>LogIn</Link></li> 
+            <li>
+              <Link to="/" style={{ color: "black", lineHeight: "3rem" }}>
+                Detox
+              </Link>
+            </li>
+          
+      
+         
+          
+            {/* <li><Link to ="/array">Array</Link></li> */}
+          
 
             
             

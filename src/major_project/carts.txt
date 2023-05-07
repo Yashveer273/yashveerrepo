@@ -1,0 +1,10 @@
+const carts =({item,handelclick})=>{
+    const [name,price,reviews,img]=item
+return(
+    <div>
+    <div>
+    <img src={img} alt="img"/>
+    <p>{name}{price}{reviews}
+    <button onclick={()=>handelclick(item)}>add to cart</button>
+)
+}

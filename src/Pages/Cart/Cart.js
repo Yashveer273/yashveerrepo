@@ -44,7 +44,7 @@ function Cart ( ) {
         {
             title:"image",
             dataIndex:"img",
-            render:(img,record)=><img src ={img} alt={record.name} height={60} width={60}/>
+            render:(img,record)=><img className='foodImg' src ={img} alt={record.name}  />
         },
         {
             title:"price",

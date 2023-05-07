@@ -1,0 +1,35 @@
+id 
+image
+c5.png=100= ✦✦✦✦✦ 20113 
+c1.png=300=✦✦✦✦✦ 13894
+brush.png=300=✦✦✦✦✦ 12810
+bottel.png=12=✦ 10
+bottel1.webp=12✦✦ 13
+              Oral care
+
+
+name-Whitening Gel, Mouthwash Bits, Bamboo Toothbrush
+Dental Floss ,Toothpaste Bits
+
+image2 
+deodorant.png ,c2.webp ,c3.webp ,soap tray.webp,
+soap Pouch.webp, 
+soap Pouch.webp
+name-
+ Deodorant, Body Balm ,Carbon Capture Cleaner, Soap Tray, Soap Pouch
+
+category-Personal Capture
+
+image3 
+the duo.webp
+the starter kit.png
+the brightening kit.png
+
+
+
+
+
+category-Bundles
+name- The Duo , The Starter Kit, The Brightening Kit
+price
+reviews

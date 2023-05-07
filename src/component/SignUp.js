@@ -1,4 +1,5 @@
 import { message } from 'antd';
+import Nav from "./Nav";
 import React,{useState,useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button} from 'antd';
@@ -12,7 +13,7 @@ const SignUp=()=>{
         if(auth)
         {   
             
-            Navigate('/Canteen')
+            Navigate('/Detox')
             
 
         }
@@ -33,7 +34,7 @@ const SignUp=()=>{
         message.success("Singup Successful");
         if(result)
         {
-            Navigate("/Canteen")
+            Navigate("/Detox")
         }
         }
         else{
@@ -44,6 +45,7 @@ const SignUp=()=>{
 }
 return(
     <>
+    <Nav/>
     <div className='loginprofile2'>
     <div className='loginprofile' >
        <h1 className="register"> Register</h1><br></br>
@@ -51,7 +53,7 @@ return(
     
         <input className='inputbox' type ="password" placeholder="Password" value={password} onChange={(e)=>setpassword(e.target.value)} /><br></br>
         <br></br>
-       <Button className='contect' onClick={collectdata}type="button"> SignUp</Button>
+       <Button className='login' onClick={collectdata}type="button"> SignUp</Button>
     </div>
     </div>
     </>

@@ -66,7 +66,8 @@
 /* background-image: url("../imges/pexels-pixabay-326279.jpg"); */
 /* background-image: url("../imges/pexels-engin-akyurt-1435895.jpg"); */
 
-background-size: cover;background-image: url("../imges/pizzabg2.jpg");
+background-size: cover;
+background-image: url("../imges/pizzabg2.jpg");
 
 }
 .ant-layout-header .anticon svg {
@@ -111,6 +112,16 @@ background-size: cover;background-image: url("../imges/pizzabg2.jpg");
   font-size: 29px;
 
 }
+.foodImg{
+  height: 60px;
+  width: 60px;
+}
+.ant-layout.ant-layout-has-sider {
+  border: solid;
+  flex-direction: row;
+  margin-top: 88px;
+  border-color: gainsboro;
+}
 /* .ant-table-tbody  tr  td{
   
   border-top: 1px solid #e1b9b9;
@@ -123,3 +134,8 @@ background-size: cover;background-image: url("../imges/pizzabg2.jpg");
   border-right: 1px solid #de8484;
   border-left: 1px solid #e1b9b9;
 } */
+.minus1:hover{
+  color: #3b4449;
+  font-size: 23px;
+
+}

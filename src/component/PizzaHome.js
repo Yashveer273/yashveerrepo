@@ -12,6 +12,7 @@ import img5 from '../imges/sundae.png';
 
 import img6 from '../imges/penne.png';
 import img7 from '../imges/noodles.png';
+import Nav from './Nav';
 
 const PizzaHome= ()=>{
     const [ProductData,setProduct]=useState([]);
@@ -59,6 +60,8 @@ const PizzaHome= ()=>{
     },[])  
     console.log(ProductData)    
     return(
+        <>
+        <Nav/>
         <LayoutApp>
             <div className='category'>
                 {categories.map((common)=>(
@@ -78,7 +81,7 @@ const PizzaHome= ()=>{
                 onClick={()=>setSelectCeteagory(category.name)}
                 >
                     <div className='categoryName'><h6 >{category.name }</h6></div>
-                    <img className='searchimage' src={ category.image2} alt ={category.name} height={70} width={70}/></div>
+                    <img className='searchimage'  style={{height:"59px"}} src={ category.image2} alt ={category.name} height={70} width={70}/></div>
                 ))}
             </div>
                 
@@ -95,7 +98,8 @@ const PizzaHome= ()=>{
                     </Col>
                 ))}
             </Row>  
-        </LayoutApp>    
+        </LayoutApp> 
+        </>   
     )
 }
 export default PizzaHome;

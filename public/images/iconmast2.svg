@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="51px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>octahedron</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A1A4F7" offset="0%"></stop>
+            <stop stop-color="#CE75DE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="z" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2020_Prophecy---Home_frame1" transform="translate(-232.000000, -995.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="octahedron" transform="translate(232.000000, 995.000000)">
+                <path d="M0.457031343,27.1824781 L30.8967639,32.9824226 L24.0376667,50.8066409 L0.544084914,27.3130576 C0.505084914,27.2740576 0.492316871,27.2233353 0.457031343,27.1824781 L0.457031343,27.1824781 Z M50.0013949,28.7675774 L28.0566409,50.7123333 L34.8323096,33.102121 L50.0013949,28.7675774 Z M27.1534603,0.438895043 C27.2036031,0.479752186 27.266629,0.497656343 27.3130576,0.544084914 L27.3130576,0.544084914 L51.2999444,24.5345991 L34.741629,29.264508 Z M23.6241627,1.60686389 L30.885881,29.1955913 L1.61049107,23.6205357 L23.6241627,1.60686389 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

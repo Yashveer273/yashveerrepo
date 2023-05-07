@@ -1,0 +1,76 @@
+Texr-overflow: Ellipsis;
+Whie-space:nowrap;
+overflow:hidden;  // overflow:"etc"; ... replace by etc on output
+output
+|--------------------|
+|yas fgf ghg g  hg...| 
+|--------------------|
+if the text is overide from div here we can use Ellipsis to show dotes.
+white-space nowrap convert the whole text in single line.
+overflow:hidden fixed the text which is out of the div with in div ex-
+problem-|yas fgf ghg g  hgnbb|m,mnznn
+output-|yas fgf ghg g  hgnbb|
+  
+--------background style properties---------------------
+-- background-attachment: fixed
+out- background image will note move on window scrolling
+
+background size---
+background-size: 0px(width) 0px(width);
+background-size: cover;
+  in this property background image cover all the size of div.
+background-size: contain;
+  in contain BG image size adjust its self in div. some time only height adjust and some time width  
+background-size: auto;
+  auto is by defualt property by which imgae  show in div only in actual its size(image size) 
+
+background gradient--
+there is 2 two types of properties
+1 linear gradient(top to bottom (default), left to right, right to left bottom to top)
+2 radios gradient( center, right bottom, left bottom, left top).
+
+ex background:linear-gradient(red,yellow);
+o/p- top=red, bottom=yellow
+
+background:linear-gradient(to right,red,yellow);
+left se chalega right ko jaega.(yellow left se start hoga right ko jaega)
+
+background:linear-gradient(45deg,red,yellow);
++45deg show right side degree and - show left side degree.
+
+background:linear-gradient(to right,red,yellow,blue);
+
+opacity- used to transparent(every think is transparent)
+background:rgba(0,0,0,0,.3)(only background will transparent)
+
+-----------Display properties---------
+basically display give the power of one element to unother ex span to div-
+practical-
+<span>vnjan1</span> <span>nnjk </span> 
+o/p- |vnjan| |nnjk|
+by defaultin inline
+span{
+    display: block;
+    border:solid red;
+}
+0/p-|vjan                                               | on is work like div 
+    |nnjk                                               |
+    and span pe width padding etc kam nahi karti but display ki help se ham ine use kar sakte hein
+    and marrgin bhi inme lwft or right hi kam karta he so display s y problem bhi out ho jaegi
+    and agr he inline bhi karna h or block bhi rakhna he to hum
+    display:inline-block; use karenge
+display:none;
+o/p- unvisible some
+
+display:inline;
+
+alien-items: center
+      
+----->
+        <sup>&copy;</sup>
+        o/p->show copyright symbol like c in circul.
+
+
+
+
+

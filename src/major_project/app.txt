@@ -1,0 +1,18 @@
+import Amazon
+import cart
+const app =()=>{
+    const [show,setshow]=useState(true);
+    const[cart,setCart]-useState([]);
+
+
+const handelclick=(item)=>{
+    console.log(item);
+}
+
+    return(
+        <nav size={cart.lenght}/>
+        <Amazon handelclick={handelclick}/>
+        <cart/>
+    )
+    
+}

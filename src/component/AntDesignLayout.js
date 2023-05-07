@@ -4,7 +4,9 @@ import {
   LogoutOutlined,
   HomeOutlined,
   ShoppingCartOutlined
+  
 } from '@ant-design/icons';
+import Nav from './Nav';
 import '../App.css';
 import { Layout, Menu, message } from 'antd';
 import React, { useEffect, useState } from 'react';
@@ -30,11 +32,13 @@ const LayoutApp  = ({children}) => {
   const LogOut=()=>{
       localStorage.clear();
       message.success("LogOut succress");
-      Navigate('/')
+      Navigate('/SignUp')
   }
   
 const navigate=useNavigate();
   return (
+    <>
+
     <Layout>
       <Sider  trigger={null} collapsible collapsed={collapsed}>
         <div className="logo">
@@ -44,20 +48,21 @@ const navigate=useNavigate();
        
         <Menu theme='dark' mode='inline'defaultSelectedKeys={['1']}>
           <Menu.Item key={1} icon={<HomeOutlined/>}>
-            <Link className='PHome' to ="/Canteen">Home</Link>
+            <Link className='PHome' to ="/">Home</Link>
           </Menu.Item>
           {/* <Menu.Item key={2} icon={<HomeOutlined/>}>
             <Link className='PHome' to ="/pizzaProduct">Product</Link>
           </Menu.Item> */}
           <Menu.Item key={2} icon={<HomeOutlined/>}>
-            <Link className='PHome' to ="">contact</Link>
+            <Link className='PHome' to ="/Canteen"> Food services</Link>
           </Menu.Item>
+         
           <Menu.Item key={3} icon={<HomeOutlined/>}>
-            <Link className='PHome' to ="/PayBill">About Us</Link>
+            <Link className='PHome' to ="/Contact">Contact</Link>
           </Menu.Item>
           <Menu.Item key="Logout" icon={<LogoutOutlined/>}>
-            <Link  className='logout' onClick={LogOut} to ="/"> LogOut
-         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;User({JSON.parse (auth).name})</Link>
+            <Link  className='logout' onClick={LogOut} to ="/SignUp"> LogOut
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;User()</Link>
           </Menu.Item>
         </Menu>
         <Menu
@@ -92,7 +97,9 @@ const navigate=useNavigate();
         </div>
       </Layout>
     </Layout>
+    </>
   );
+  
 };
 
 export default LayoutApp;
