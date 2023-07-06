@@ -50,6 +50,7 @@ function App() {
        <Route path='/Bundles'element={<Bundles1/>}></Route>
        <Route path='/yash'element={<Amazon/>}></Route>
 
+
        </Routes>
 
       

@@ -247,21 +247,7 @@ const Home = () => {
       </div>
 
       <div className="container2">
-        <div className="container_x" style={{
-            width: "103%",
-
-            position: "absolute",
-            top: "203px",
-            borderRadius: "0",
-            height: "643px",
-
-            
-            backgroundImage: "url(/images/banner2.jpg)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "100% 100%",
-            borderBottom: "1px solid",
-          }}></div>
-        <div className="container_y"></div>
+        
 
         <div className="oral1">
           <span className="oral">
@@ -322,7 +308,7 @@ const Home = () => {
         <div className="container4_div7"></div>
         <div className="container4_div8"></div>
       </div>
-      <div className="container6">
+      <div className="container6" style={{bottom:"-140pc"}}> 
         <div className="container4_div1" style={{ marg: "15px" ,backgroundSize:"cover"}}>
         <img src={pe1}></img>
 
